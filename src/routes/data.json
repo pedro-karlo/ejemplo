@@ -1,0 +1,26 @@
+[
+    
+    {
+        "id": "1",
+        "Nombre" : "Lakamir",
+        "Años" : "2323",
+        "IdentidadSecreta" : "Fer",
+        "Poderes" : ["Inmortalidad","Estres"] 
+    },
+
+    {
+        "id": "2",
+        "Nombre" : "Rocket",
+        "Años" : "2340",
+        "IdentidadSecreta" : "Cesar",
+        "Poderes" : ["Inmortalidad","Demencia"]
+    },
+
+    {
+        "id": "3",
+        "Nombre" : "Viejo de Rancho",
+        "Años" : "1200",
+        "IdentidadSecreta" : "Pedro",
+        "Poderes" : ["Inmortalidad","Invocar Caguamas"]
+    }
+]
