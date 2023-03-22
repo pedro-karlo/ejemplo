@@ -1,0 +1,21 @@
+
+###
+
+GET http://localhost:6969/api/productos
+
+###
+
+POST http://localhost:6969/api/productos
+Content-Type: application/json 
+
+{
+    "id": "9",
+    "Nombre" : "Naruto",
+    "Años" : "666",
+    "IdentidadSecreta" : "Goku",
+    "Poderes" : ["Evangelizacion"]
+}
+
+###
+
+GET http://localhost:6969/api/productos/>insertarIDAQUI<

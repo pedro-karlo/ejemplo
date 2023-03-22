@@ -1,36 +1,25 @@
-const express = require('express');
-const router = express.Router();
+const [ Router ] = require('express');
+const router = Router();
 
-const datos = require('./data.json');
+//const productos = require('../models/productos');
+//const router = express.Router();
+
+//const datos = require('./data.json');
+//console.log(productos);
+
+const productosCtrl = require('../controllers/productos.controller')
+
 
 //verificacion consola //console.log(datos);
 
-router.get('/', (req,res) =>{
-    res.json(datos);
-});
+router.get('/', productosCtrl.getProducts);
 
-router.get('/:id', (req,res) =>{
-    const {id} = req.params;
-    datos.forEach(dato => {
-        if(dato.id == id){
-            res.json(dato);
-        }
-    });
-});
+router.get('/:id', productosCtrl.getProduct);
 
-router.post('/',(req,res) =>{
-    const {id,Nombre,Años,IdentidadSecreta,Poderes} = req.body;
-    if(id&&Nombre&&Años&&IdentidadSecreta&&Poderes){
-        const id = datos.length +1;
-        const nuevoDato = {...req.body, id};
-        datos.push(nuevoDato);
-        //console.log(nuevoDato);
-        res.status(200).json(datos);
-    }else{
-        res.status(500).json({error:'no data'});
-        //res.send("Err1: No Data");
-    }
-}
-)
+router.delete('/',productosCtrl.deleteProduct);
+
+router.put('/',productosCtrl.updateProduct);
+
+router.post('/',productosCtrl.createProduct);
 
 module.exports = router;
