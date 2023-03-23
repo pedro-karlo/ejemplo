@@ -1,4 +1,4 @@
-const [ Router ] = require('express');
+const { Router } = require('express');
 const router = Router();
 
 //const productos = require('../models/productos');
@@ -23,3 +23,5 @@ router.put('/',productosCtrl.updateProduct);
 router.post('/',productosCtrl.createProduct);
 
 module.exports = router;
+
+//grande pxndx grande pxndx ep jose madero 16 de marzo
