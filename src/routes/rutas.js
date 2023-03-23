@@ -23,3 +23,5 @@ router.put('/',productosCtrl.updateProduct);
 router.post('/',productosCtrl.createProduct);
 
 module.exports = router;
+
+//grande pxndx grande pxndx ep jose madero 16 de marzo
